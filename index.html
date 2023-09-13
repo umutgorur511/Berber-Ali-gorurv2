@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        #home {
+            background: url('img/andre-reis-1_DAlXy0wng-unsplash.jpg') no-repeat center center fixed;
+            height: 85vh;
+            position: relative;
+            width: 100%;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container container-nav">
+            <img class="responsive-hide" src="./img/baba.jpg" width="110px" alt="">
+            <div class="site-title m-auto">
+                <a class="list-style-none" href="index.html">
+                    <h1 id="my-heading">Berber Ali Görür</h1>
+                </a>
+                <img class="responsive-img-show" src="./img/baba.jpg" alt="">
+                <p class="subtitle responsive-hide">Bakırköy</p>
+            </div>
+    
+            <!-- Hamburger menü düğmesi -->
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+    
+            <nav class="m-auto">
+                <ul>
+                    <li><a href="index.html" class="current-page">Ana Sayfa</a></li>
+                    <li><a href="gallery.html">Galeri</a></li>
+                    <li><a href="contact.html">Randevu Al</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="home">
+            <div class="overlay">
+                <div class="landing-text">
+                    <h3>Bakırköy</h3>
+                    <h1>Berber Ali Görür</h1>
+                    <hr id="hr-main">
+                    <a href="contact.html" class="button btn-hire">Randevu al</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+// JavaScript kodunuzu eklemeyi unutmayın
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        nav.classList.remove('active');
+    }
+});
+
+
+    </script>
+</body>
+
+</html>

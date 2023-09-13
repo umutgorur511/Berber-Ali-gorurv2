@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container container-nav">
+            <img class="responsive-hide" src="./img/baba.jpg" width="110px" alt="">
+            <div class="site-title m-auto">
+                <a class="list-style-none" href="index.html">
+                    <h1 id="my-heading">Berber Ali Görür</h1>
+                </a>
+                <img class="responsive-img-show" src="./img/baba.jpg" alt="">
+                <p class="subtitle responsive-hide">Bakırköy</p>
+            </div>
+    
+            <!-- Hamburger menü düğmesi -->
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+    
+            <nav class="m-auto">
+                <ul>
+                    <li><a href="index.html" class="current-page">Ana Sayfa</a></li>
+                    <li><a href="gallery.html">Galeri</a></li>
+                    <li><a href="contact.html">Randevu Al</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="contact">
+        <h1>Randevu Al</h1>
+        <div class="flex-container">
+            <div class="flex-item-left">
+                <h4>Konumumuz</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2099.354406797123!2d28.87105753464872!3d40.978862001728565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabd361229d385%3A0x3a70692dd4ee8f14!2zQmVyYmVyIEFsaSBHw7Zyw7xy!5e0!3m2!1str!2str!4v1694461640872!5m2!1str!2str"  class="map-size" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                <h4>Adres: Zeytinlik, Yakut Sk. Sinanoğlu Pasajı No:28/26, 34140 Bakırköy/İstanbul</h4>
+                <h4>Telefon: 0-538-471-97-37</h4>
+                <a href="https://api.whatsapp.com/send?phone=905384719737" >
+                    <button class="g">Randevu Al</button>
+                </a>
+                
+            </div>
+           
+        </div>
+    </main>
+    <footer class="footer">
+    </footer>
+
+    <script>
+        // JavaScript kodunuzu eklemeyi unutmayın
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav ul');
+        
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+        
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                nav.classList.remove('active');
+            }
+        });
+        
+        
+            </script>
+</body>
+
+</html>
